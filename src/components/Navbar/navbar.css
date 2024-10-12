@@ -1,0 +1,155 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  z-index: 101;
+  padding: 20px 0;
+}
+
+.navbar .container .logo {
+  width: 130px;
+}
+
+.navbar .container .navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  color: #49557e;
+}
+
+.navbar .container .navbar-menu li {
+  cursor: pointer;
+}
+
+.navbar .container .navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar .container .navbar-right .search,
+.navbar .container .navbar-right .baskit {
+  width: 20px;
+  cursor: pointer;
+}
+
+.navbar .container button {
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid #49557e;
+  padding: 6px 20px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.navbar .container .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 8px;
+  min-height: 8px;
+  background-color: tomato;
+  top: -7px;
+  right: -7px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1050px) {
+  .navbar .container .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 20px;
+    font-size: 16px;
+  }
+
+  .navbar-right {
+    gap: 30px;
+  }
+
+  .navbar-right img {
+    width: 22px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .navbar .container .logo {
+    width: 140px;
+  }
+
+  .navbar-menu {
+    gap: 15px;
+  }
+
+  .navbar-right {
+    gap: 20px;
+  }
+
+  .navbar-right img {
+    width: 20px;
+  }
+
+  .navbar-right button {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .navbar .container .logo {
+    width: 110px;
+  }
+
+  .navbar-menu {
+    display: none !important;
+  }
+
+  .navbar-right img {
+    width: 20px !important;
+  }
+
+  .navbar-right button {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 410px) {
+
+  .navbar .container .logo {
+    width: 90px;
+  }
+
+  .navbar-right{
+    gap: 20px !important;
+  }
+  .navbar-right img {
+    width: 15px !important;
+  }
+
+  .navbar-right button {
+    font-size: 13px !important;
+    padding: 5px 15px !important;
+  }
+
+}
